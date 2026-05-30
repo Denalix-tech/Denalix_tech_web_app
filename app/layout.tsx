@@ -11,13 +11,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://denalitech.ai"),
+  metadataBase: new URL("https://denalixtech.ai"),
   title: {
-    default: "Denali Tech | AI-Powered Software Solutions",
-    template: "%s | Denali Tech"
+    default: "Denalix Tech | AI-Powered Software Solutions",
+    template: "%s | Denalix Tech"
   },
   description:
-    "Denali Tech builds AI systems, automation workflows, geospatial applications, cloud platforms, SaaS products, and modern software for growing organizations.",
+    "Denalix Tech builds AI systems, automation workflows, geospatial applications, cloud platforms, SaaS products, and modern software for growing organizations.",
   keywords: [
     "AI consulting",
     "software development",
@@ -28,19 +28,19 @@ export const metadata: Metadata = {
     "cloud software"
   ],
   openGraph: {
-    title: "Denali Tech | AI-Powered Software Solutions",
+    title: "Denalix Tech | AI-Powered Software Solutions",
     description:
       "AI, automation, geospatial, SaaS, and full-stack software consulting for modern businesses.",
-    url: "https://denalitech.ai",
-    siteName: "Denali Tech",
+    url: "https://denalixtech.ai",
+    siteName: "Denalix Tech",
     locale: "en_US",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Denali Tech | AI-Powered Software Solutions",
+    title: "Denalix Tech | AI-Powered Software Solutions",
     description:
-      "Build scalable digital products, AI workflows, and enterprise platforms with Denali Tech."
+      "Build scalable digital products, AI workflows, and enterprise platforms with Denalix Tech."
   }
 };
 

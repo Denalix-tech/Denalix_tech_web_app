@@ -31,7 +31,7 @@ export function HeroSection() {
             AI-Powered Software Solutions for Modern Businesses
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            Denali Tech builds AI systems, automation workflows, full-stack
+            Denalix Tech builds AI systems, automation workflows, full-stack
             platforms, geospatial tools, and scalable digital products for
             startups, healthcare organizations, local businesses, and enterprises.
           </p>
@@ -53,7 +53,7 @@ export function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.1 }}
           className="relative"
-          aria-label="Denali Tech capability visualization"
+          aria-label="Denalix Tech capability visualization"
         >
           <div className="glass-panel rounded-lg p-5">
             <div className="rounded-lg border border-white/10 bg-slate-950/80 p-4">

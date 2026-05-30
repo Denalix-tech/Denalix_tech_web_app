@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { productIdeas } from "@/data/site";
+import { explainerPages, productIdeas } from "@/data/site";
 import { CTASection } from "@/components/sections/CTASection";
+import { ExplainerLinkSection } from "@/components/sections/ExplainerLinkSection";
 import { PageHero } from "@/components/sections/PageHero";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -17,7 +18,12 @@ export default function SaaSProductsPage() {
       <PageHero
         eyebrow="SaaS Products"
         title="AI-powered SaaS products and tools built with a product mindset"
-        description="Denali Tech helps founders and organizations validate, build, launch, and improve SaaS products focused on workflow optimization, analytics, intelligent agents, and industry-specific operations."
+        description="Denalix Tech helps founders and organizations validate, build, launch, and improve SaaS products focused on workflow optimization, analytics, intelligent agents, and industry-specific operations."
+      />
+      <ExplainerLinkSection
+        title="Thinking about a software product?"
+        description="Start with a simple guide that explains what a SaaS product is and how an idea becomes an online product."
+        links={[explainerPages.saas]}
       />
       <section className="py-16 sm:py-20">
         <div className="container-pad grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">

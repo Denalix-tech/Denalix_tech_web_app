@@ -71,7 +71,7 @@ export function ContactForm() {
         </Button>
         {status === "success" ? (
           <p role="status" className="text-sm font-medium text-emerald-300">
-            Thanks. Your message was received and Denali Tech will follow up soon.
+            Thanks. Your message was received and Denalix Tech will follow up soon.
           </p>
         ) : null}
       </div>

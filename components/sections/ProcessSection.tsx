@@ -9,7 +9,7 @@ export function ProcessSection() {
           align="center"
           eyebrow="Process"
           title="A delivery model built for clarity and momentum"
-          description="Denali Tech combines consulting discipline with product execution, moving from strategy to production systems without losing the business context."
+          description="Denalix Tech combines consulting discipline with product execution, moving from strategy to production systems without losing the business context."
         />
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {processSteps.map((step, index) => (

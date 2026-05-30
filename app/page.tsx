@@ -10,7 +10,7 @@ import { WhySection } from "@/components/sections/WhySection";
 export const metadata: Metadata = {
   title: "AI-Powered Software Solutions for Modern Businesses",
   description:
-    "Denali Tech builds AI systems, automation workflows, full-stack platforms, GIS tools, analytics dashboards, and scalable digital products."
+    "Denalix Tech builds AI systems, automation workflows, full-stack platforms, GIS tools, analytics dashboards, and scalable digital products."
 };
 
 export default function HomePage() {
@@ -28,7 +28,7 @@ export default function HomePage() {
       <FeatureGrid
         eyebrow="Software Engineering"
         title="Modern applications and platforms built for real users"
-        description="From polished interfaces to secure backend systems, Denali Tech builds production software that can evolve with your organization."
+        description="From polished interfaces to secure backend systems, Denalix Tech builds production software that can evolve with your organization."
         features={softwareFeatures}
       />
       <FeatureGrid

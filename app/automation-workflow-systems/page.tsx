@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { BellRing, ClipboardCheck, GitBranch, PlugZap, Workflow } from "lucide-react";
+import { explainerPages } from "@/data/site";
 import { CTASection } from "@/components/sections/CTASection";
+import { ExplainerLinkSection } from "@/components/sections/ExplainerLinkSection";
 import { PageHero } from "@/components/sections/PageHero";
 import { SectionHeader } from "@/components/SectionHeader";
 
@@ -24,7 +26,12 @@ export default function AutomationPage() {
       <PageHero
         eyebrow="Automation"
         title="Workflow systems that reduce manual work and operational drift"
-        description="Denali Tech designs automation around the actual way your business runs, connecting people, software, AI, data, and approvals into reliable repeatable systems."
+        description="Denalix Tech designs automation around the actual way your business runs, connecting people, software, AI, data, and approvals into reliable repeatable systems."
+      />
+      <ExplainerLinkSection
+        title="Wondering what automation can do?"
+        description="Start with a simple guide that explains how routine business steps can happen with less manual effort."
+        links={[explainerPages.automation]}
       />
       <section className="py-16 sm:py-20">
         <div className="container-pad">

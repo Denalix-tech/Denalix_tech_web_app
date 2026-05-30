@@ -10,7 +10,7 @@ export function ServicesOverview() {
           align="center"
           eyebrow="Services"
           title="Consulting and engineering for intelligent digital systems"
-          description="From early strategy to production deployment, Denali Tech helps teams design, build, integrate, and improve the software that runs their business."
+          description="From early strategy to production deployment, Denalix Tech helps teams design, build, integrate, and improve the software that runs their business."
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => (

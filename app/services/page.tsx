@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { capabilities, services } from "@/data/site";
+import { capabilities, explainerPages, services } from "@/data/site";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SectionHeader } from "@/components/SectionHeader";
 import { CTASection } from "@/components/sections/CTASection";
+import { ExplainerLinkSection } from "@/components/sections/ExplainerLinkSection";
 import { PageHero } from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore Denali Tech consulting services for AI, software development, cloud systems, GIS, workflow automation, analytics dashboards, and SaaS products."
+    "Explore Denalix Tech consulting services for AI, software development, cloud systems, GIS, workflow automation, analytics dashboards, and SaaS products."
 };
 
 export default function ServicesPage() {
@@ -17,7 +18,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="AI, software, geospatial, and automation consulting under one roof"
-        description="Denali Tech helps organizations turn fragmented processes, data, and product ideas into reliable software systems that create measurable leverage."
+        description="Denalix Tech helps organizations turn fragmented processes, data, and product ideas into reliable software systems that create measurable leverage."
       />
       <section className="py-16 sm:py-20">
         <div className="container-pad">
@@ -28,6 +29,18 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+      <ExplainerLinkSection
+        title="Not sure which service fits?"
+        description="These short guides explain the business value of each option in everyday language."
+        links={[
+          explainerPages.ai,
+          explainerPages.software,
+          explainerPages.automation,
+          explainerPages.maps,
+          explainerPages.saas,
+          explainerPages.dashboards
+        ]}
+      />
       <section className="py-16 sm:py-20">
         <div className="container-pad">
           <SectionHeader

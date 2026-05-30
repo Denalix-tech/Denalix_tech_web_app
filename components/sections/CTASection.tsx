@@ -9,7 +9,7 @@ type CTASectionProps = {
 
 export function CTASection({
   title = "Ready to plan your AI or software project?",
-  description = "Bring Denali Tech into the conversation early. We will help clarify the opportunity, choose the right technical path, and define a practical delivery roadmap."
+  description = "Bring Denalix Tech into the conversation early. We will help clarify the opportunity, choose the right technical path, and define a practical delivery roadmap."
 }: CTASectionProps) {
   return (
     <section className="py-16 sm:py-20">

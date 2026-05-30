@@ -1,6 +1,6 @@
-# Denali Tech Web App
+# Denalix Tech Web App
 
-Modern Next.js website for Denali Tech, an AI and software consulting company.
+Modern Next.js website for Denalix Tech, an AI and software consulting company.
 
 ## Run locally
 

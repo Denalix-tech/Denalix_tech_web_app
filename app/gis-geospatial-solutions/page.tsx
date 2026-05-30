@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { BarChart3, DatabaseZap, Globe2, Layers, MapPinned } from "lucide-react";
-import { gisFeatures } from "@/data/site";
+import { explainerPages, gisFeatures } from "@/data/site";
 import { CTASection } from "@/components/sections/CTASection";
+import { ExplainerLinkSection } from "@/components/sections/ExplainerLinkSection";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import { PageHero } from "@/components/sections/PageHero";
 
@@ -25,7 +26,12 @@ export default function GISPage() {
       <PageHero
         eyebrow="GIS & Geospatial"
         title="Geospatial applications that make location data actionable"
-        description="Denali Tech builds map-based software, spatial analytics workflows, and location intelligence platforms for organizations that depend on place, territory, routing, assets, and field operations."
+        description="Denalix Tech builds map-based software, spatial analytics workflows, and location intelligence platforms for organizations that depend on place, territory, routing, assets, and field operations."
+      />
+      <ExplainerLinkSection
+        title="New to map-based systems?"
+        description="Start with a simple guide that explains how location data can help operations, planning, and decisions."
+        links={[explainerPages.maps]}
       />
       <FeatureGrid
         eyebrow="Geospatial Scope"
