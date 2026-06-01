@@ -39,7 +39,7 @@ export function HeroSection() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg">
               <Link href="/contact">
-                Request a Business Systems Audit
+                Book a Consultation
                 <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
               </Link>
             </Button>

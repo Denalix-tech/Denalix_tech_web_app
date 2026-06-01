@@ -24,7 +24,7 @@ export function CTASection({
             </div>
             <Button asChild size="lg" className="shrink-0">
               <Link href="/contact">
-                Request a Business Systems Audit
+                Book a Consultation
                 <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
               </Link>
             </Button>

@@ -39,7 +39,7 @@ export function Navbar() {
 
         <div className="hidden lg:block">
           <Button asChild size="sm">
-            <Link href="/contact">Request an Audit</Link>
+            <Link href="/contact">Book a Consultation</Link>
           </Button>
         </div>
 

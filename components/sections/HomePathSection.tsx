@@ -9,9 +9,9 @@ export function HomePathSection() {
       <div className="container-pad">
         <SectionHeader
           align="center"
-          eyebrow="Explore Denalix Tech"
-          title="Scroll through the business story, then go deeper where it matters"
-          description="The homepage gives you the plain business version. Each section points to a deeper page when you are ready for details."
+          eyebrow="Where To Start"
+          title="Choose the path that matches your next business move"
+          description="Whether you need a clearer plan, a working system, a simple explanation, or a future partner, Denalix Tech gives you a practical place to begin."
         />
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {homePageLinks.map((item) => (

@@ -39,7 +39,7 @@ export function Footer() {
             <h2 className="text-sm font-semibold text-white">Start</h2>
             <div className="mt-4 grid gap-3">
               <Link href="/contact" className="text-sm text-slate-400 hover:text-cyan-200">
-                Request an Audit
+                Book a Consultation
               </Link>
               <a href="mailto:hello@denalixtech.ai" className="text-sm text-slate-400 hover:text-cyan-200">
                 hello@denalixtech.ai
