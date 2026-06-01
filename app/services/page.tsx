@@ -9,7 +9,7 @@ import { PageHero } from "@/components/sections/PageHero";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore Denalix Tech consulting services for AI, software development, cloud systems, GIS, workflow automation, analytics dashboards, and SaaS products."
+    "Explore Denalix Tech services for smarter business tools, custom software, automation, dashboards, map-based systems, and digital products."
 };
 
 export default function ServicesPage() {
@@ -17,8 +17,8 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Services"
-        title="AI, software, geospatial, and automation consulting under one roof"
-        description="Denalix Tech helps organizations turn fragmented processes, data, and product ideas into reliable software systems that create measurable leverage."
+        title="The specific ways Denalix Tech can help"
+        description="If the homepage describes the business outcomes, this page explains the services behind them: smarter tools, custom software, automation, dashboards, map-based systems, integrations, and digital products."
       />
       <section className="py-16 sm:py-20">
         <div className="container-pad">

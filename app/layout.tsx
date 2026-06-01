@@ -13,11 +13,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://denalixtech.ai"),
   title: {
-    default: "Denalix Tech | AI-Powered Software Solutions",
+    default: "Denalix Tech | Better Business Systems",
     template: "%s | Denalix Tech"
   },
   description:
-    "Denalix Tech builds AI systems, automation workflows, geospatial applications, cloud platforms, SaaS products, and modern software for growing organizations.",
+    "Denalix Tech helps businesses reduce manual work, organize operations, improve customer experiences, and launch useful digital tools.",
   keywords: [
     "AI consulting",
     "software development",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     "cloud software"
   ],
   openGraph: {
-    title: "Denalix Tech | AI-Powered Software Solutions",
+    title: "Denalix Tech | Better Business Systems",
     description:
-      "AI, automation, geospatial, SaaS, and full-stack software consulting for modern businesses.",
+      "Practical digital systems, automation, dashboards, custom tools, and product builds for modern businesses.",
     url: "https://denalixtech.ai",
     siteName: "Denalix Tech",
     locale: "en_US",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Denalix Tech | AI-Powered Software Solutions",
+    title: "Denalix Tech | Better Business Systems",
     description:
-      "Build scalable digital products, AI workflows, and enterprise platforms with Denalix Tech."
+      "Reduce manual work, organize operations, and build useful digital tools with Denalix Tech."
   }
 };
 

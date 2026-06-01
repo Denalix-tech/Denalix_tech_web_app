@@ -20,14 +20,10 @@ import {
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "AI Solutions", href: "/ai-solutions" },
-  { label: "Software", href: "/software-development" },
-  { label: "GIS", href: "/gis-geospatial-solutions" },
-  { label: "Automation", href: "/automation-workflow-systems" },
-  { label: "SaaS", href: "/saas-products" },
-  { label: "Simple Guides", href: "/learn" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" }
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "Simple Guide", href: "/learn" },
+  { label: "Careers", href: "/careers" },
+  { label: "About", href: "/about" }
 ];
 
 export const services = [
@@ -90,12 +86,45 @@ export const services = [
 ];
 
 export const whyDenalix = [
-  "End-to-end product development",
-  "AI-first engineering",
-  "Scalable architecture",
-  "Cloud-ready systems",
-  "Startup-speed execution",
-  "Consulting + product mindset"
+  "We start with the business problem",
+  "We explain options clearly",
+  "We build tools people can actually use",
+  "We connect with your existing systems",
+  "We move quickly without skipping quality",
+  "We support the work after launch"
+];
+
+export const homeOutcomes = [
+  {
+    title: "Turn manual chaos into digital clarity",
+    description:
+      "Replace scattered spreadsheets, repeated follow-ups, and copy-and-paste work with cleaner systems your team can trust."
+  },
+  {
+    title: "Find the leaks in your operation",
+    description:
+      "Identify where leads, customers, tasks, approvals, or information are getting lost, delayed, or handled twice."
+  },
+  {
+    title: "Build a roadmap before building software",
+    description:
+      "Start with the business goal, then decide what should be automated, custom-built, connected, measured, or simplified."
+  },
+  {
+    title: "Create a smoother customer journey",
+    description:
+      "Make intake, communication, status updates, scheduling, documents, and self-service easier for the people you serve."
+  },
+  {
+    title: "Scale beyond founder-led processes",
+    description:
+      "Turn knowledge in people’s heads into repeatable systems, dashboards, automations, and tools that new team members can use."
+  },
+  {
+    title: "Prepare for the next stage of growth",
+    description:
+      "Create the digital foundation for more customers, more locations, new services, better reporting, and stronger operations."
+  }
 ];
 
 export const explainerPages = {
@@ -294,34 +323,67 @@ export const gisFeatures = [
 
 export const processSteps = [
   {
-    title: "Discover",
+    title: "Share the problem",
     description:
-      "Clarify the business goal, current systems, users, risks, and technical constraints."
+      "Tell us what is slowing the business down, what feels messy, or what you want customers or staff to do more easily."
   },
   {
-    title: "Design",
+    title: "Map the workflow",
     description:
-      "Shape the product architecture, data flows, UX, AI approach, and delivery roadmap."
+      "We look at the people, tools, files, handoffs, and decisions involved so the real bottlenecks are clear."
   },
   {
-    title: "Build",
+    title: "Create the plan",
     description:
-      "Develop the application, automation, model workflow, integrations, and backend systems."
+      "You get a practical roadmap: what to build first, what can wait, what it may cost, and what success should look like."
   },
   {
-    title: "Integrate",
+    title: "Build and improve",
     description:
-      "Connect CRMs, databases, APIs, cloud services, analytics tools, and operational systems."
+      "We build in stages, connect the right tools, launch the system, and keep improving it with feedback."
+  }
+];
+
+export const homePageLinks = [
+  {
+    eyebrow: "Services",
+    title: "See what we can build or improve",
+    description:
+      "Explore the exact services behind the business outcomes: custom tools, automation, dashboards, smarter workflows, map-based systems, and digital products.",
+    href: "/services",
+    cta: "Explore services"
   },
   {
-    title: "Deploy",
+    eyebrow: "How It Works",
+    title: "Understand the plan before you commit",
     description:
-      "Launch on production-ready infrastructure with monitoring, security, and performance in mind."
+      "See how we move from a business problem to a clear roadmap, working system, launch, and ongoing improvement.",
+    href: "/how-it-works",
+    cta: "See the process"
   },
   {
-    title: "Support",
+    eyebrow: "Simple Guide",
+    title: "Learn the basics step by step",
     description:
-      "Iterate with the business, improve workflows, and keep systems healthy as needs evolve."
+      "Not sure what automation, dashboards, AI tools, or custom software mean in practice? Start with short guides written for business readers.",
+    href: "/learn",
+    cta: "Read simple guides"
+  },
+  {
+    eyebrow: "Careers",
+    title: "Work with a practical technology team",
+    description:
+      "Learn what kind of collaborators, builders, and communicators Denalix Tech is interested in as the company grows.",
+    href: "/careers",
+    cta: "View careers"
+  },
+  {
+    eyebrow: "About",
+    title: "Meet the thinking behind Denalix Tech",
+    description:
+      "Learn why we focus on business clarity first, then use the right technology to make operations smoother and more scalable.",
+    href: "/about",
+    cta: "About Denalix"
   }
 ];
 

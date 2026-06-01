@@ -2,15 +2,15 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Bot, Database, Map, Sparkles, Workflow } from "lucide-react";
+import { ArrowRight, BarChart3, ClipboardCheck, Sparkles, Users, Workflow } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   const chips = [
-    { label: "AI Agents", icon: Bot },
-    { label: "Cloud Platforms", icon: Database },
-    { label: "GIS Apps", icon: Map },
-    { label: "Automation", icon: Workflow }
+    { label: "Less manual work", icon: Workflow },
+    { label: "Clearer operations", icon: ClipboardCheck },
+    { label: "Better decisions", icon: BarChart3 },
+    { label: "Smoother customer service", icon: Users }
   ];
 
   return (
@@ -25,25 +25,26 @@ export function HeroSection() {
         >
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-sm font-medium text-cyan-100">
             <Sparkles className="h-4 w-4" aria-hidden="true" />
-            AI, automation, geospatial, and software engineering
+            Digital foundation for businesses ready to move faster
           </div>
           <h1 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-            AI-Powered Software Solutions for Modern Businesses
+            Modernize. Automate. Scale with confidence.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            Denalix Tech builds AI systems, automation workflows, full-stack
-            platforms, geospatial tools, and scalable digital products for
-            startups, healthcare organizations, local businesses, and enterprises.
+            Denalix Tech helps startups, local businesses, healthcare teams,
+            and growing companies turn manual chaos into digital clarity. We
+            find the operational leaks, build the right systems, and create the
+            technology foundation needed to grow.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg">
               <Link href="/contact">
-                Book a Consultation
+                Request a Business Systems Audit
                 <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="/services">Explore Services</Link>
+              <Link href="/how-it-works">See How It Works</Link>
             </Button>
           </div>
         </motion.div>
@@ -59,8 +60,8 @@ export function HeroSection() {
             <div className="rounded-lg border border-white/10 bg-slate-950/80 p-4">
               <div className="mb-5 flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-cyan-200">Operational AI System</p>
-                  <p className="text-xs text-slate-500">Connected workflows and products</p>
+                  <p className="text-sm font-medium text-cyan-200">Business Growth System</p>
+                  <p className="text-xs text-slate-500">Operations, customers, data, and delivery aligned</p>
                 </div>
                 <span className="rounded-full bg-emerald-400/12 px-3 py-1 text-xs font-semibold text-emerald-200">
                   Live
@@ -88,9 +89,9 @@ export function HeroSection() {
               </div>
               <div className="mt-5 grid grid-cols-3 gap-3 text-center">
                 {[
-                  ["40%", "less manual work"],
-                  ["3x", "faster decisions"],
-                  ["24/7", "system support"]
+                  ["01", "audit the leaks"],
+                  ["02", "map the roadmap"],
+                  ["03", "build to scale"]
                 ].map(([value, label]) => (
                   <div key={label} className="rounded-md border border-white/10 bg-cyan-300/[0.08] p-3">
                     <p className="text-xl font-bold text-white">{value}</p>

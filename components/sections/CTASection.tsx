@@ -8,8 +8,8 @@ type CTASectionProps = {
 };
 
 export function CTASection({
-  title = "Ready to plan your AI or software project?",
-  description = "Bring Denalix Tech into the conversation early. We will help clarify the opportunity, choose the right technical path, and define a practical delivery roadmap."
+  title = "Ready to digitalize the parts of your business that are slowing growth?",
+  description = "Bring Denalix Tech into the conversation early. We will help find the operational bottlenecks, shape the roadmap, and build the right system in practical stages."
 }: CTASectionProps) {
   return (
     <section className="py-16 sm:py-20">
@@ -24,7 +24,7 @@ export function CTASection({
             </div>
             <Button asChild size="lg" className="shrink-0">
               <Link href="/contact">
-                Book a Consultation
+                Request a Business Systems Audit
                 <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
               </Link>
             </Button>

@@ -7,9 +7,9 @@ export function ProcessSection() {
       <div className="container-pad">
         <SectionHeader
           align="center"
-          eyebrow="Process"
-          title="A delivery model built for clarity and momentum"
-          description="Denalix Tech combines consulting discipline with product execution, moving from strategy to production systems without losing the business context."
+          eyebrow="How It Works"
+          title="A simple plan before we build"
+          description="We start with the request, understand the business, create a practical roadmap, then build and improve the right solution in stages."
         />
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {processSteps.map((step, index) => (

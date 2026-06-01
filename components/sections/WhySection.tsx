@@ -8,8 +8,8 @@ export function WhySection() {
       <div className="container-pad grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
         <SectionHeader
           eyebrow="Why Denalix Tech"
-          title="Practical strategy, serious engineering, and product-minded execution"
-          description="Denalix Tech is built for organizations that need more than a prototype. We connect business goals, AI capabilities, secure architecture, and scalable software delivery."
+          title="From operational leaks to scalable systems"
+          description="If the business is stuck, we find the bottleneck. If the idea is new, we shape the roadmap. If the team is growing, we build the digital foundation that keeps work moving."
         />
         <div className="grid gap-4 sm:grid-cols-2">
           {whyDenalix.map((item) => (

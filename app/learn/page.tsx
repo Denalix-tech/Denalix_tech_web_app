@@ -13,13 +13,13 @@ export default function LearnPage() {
   return (
     <>
       <PageHero
-        eyebrow="Simple Guides"
-        title="Technology services explained for business owners and teams"
-        description="Short, practical pages that explain what each service does, when it helps, and what a real project can look like."
+        eyebrow="Simple Guide"
+        title="Step-by-step explanations for business folks"
+        description="Short, practical pages that explain what each service does, when it helps, and what a real project can look like without expecting a technical background."
       />
       <ExplainerLinkSection
         title="Choose what you want to understand"
-        description="Start with the business problem. Each guide keeps the language practical and avoids heavy technical terms."
+        description="Start with the business problem. Each guide keeps the language practical, simple, and focused on real outcomes."
         links={[
           explainerPages.ai,
           explainerPages.software,

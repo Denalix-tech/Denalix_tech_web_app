@@ -23,7 +23,7 @@ export function Navbar() {
         </div>
 
         <div className="hidden items-center gap-1 lg:flex">
-          {navItems.slice(0, -1).map((item) => (
+          {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -39,7 +39,7 @@ export function Navbar() {
 
         <div className="hidden lg:block">
           <Button asChild size="sm">
-            <Link href="/contact">Book a Consultation</Link>
+            <Link href="/contact">Request an Audit</Link>
           </Button>
         </div>
 

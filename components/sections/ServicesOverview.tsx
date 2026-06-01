@@ -8,9 +8,9 @@ export function ServicesOverview() {
       <div className="container-pad">
         <SectionHeader
           align="center"
-          eyebrow="Services"
-          title="Consulting and engineering for intelligent digital systems"
-          description="From early strategy to production deployment, Denalix Tech helps teams design, build, integrate, and improve the software that runs their business."
+          eyebrow="Where We Fit"
+          title="From business problem to working solution"
+          description="On the homepage, we keep it simple: tell us what is slowing the business down, what customers need, or what you want to launch. The Services page explains the specific ways we can help."
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => (

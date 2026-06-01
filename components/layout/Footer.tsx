@@ -9,8 +9,8 @@ export function Footer() {
         <div className="max-w-md space-y-4">
           <BrandLogo />
           <p className="text-sm leading-6 text-slate-400">
-            AI and software consulting for teams that need intelligent workflows,
-            scalable platforms, geospatial systems, and cloud-ready digital products.
+            Practical digital systems for businesses that want less manual work,
+            clearer operations, better customer experiences, and room to grow.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ export function Footer() {
             </div>
           </div>
           <div>
-            <h2 className="text-sm font-semibold text-white">Solutions</h2>
+            <h2 className="text-sm font-semibold text-white">Explore</h2>
             <div className="mt-4 grid gap-3">
               {navItems.slice(4, 8).map((item) => (
                 <Link key={item.href} href={item.href} className="text-sm text-slate-400 hover:text-cyan-200">
@@ -39,7 +39,7 @@ export function Footer() {
             <h2 className="text-sm font-semibold text-white">Start</h2>
             <div className="mt-4 grid gap-3">
               <Link href="/contact" className="text-sm text-slate-400 hover:text-cyan-200">
-                Book a Consultation
+                Request an Audit
               </Link>
               <a href="mailto:hello@denalixtech.ai" className="text-sm text-slate-400 hover:text-cyan-200">
                 hello@denalixtech.ai
