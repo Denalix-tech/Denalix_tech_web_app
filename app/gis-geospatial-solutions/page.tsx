@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { BarChart3, DatabaseZap, Globe2, Layers, MapPinned } from "lucide-react";
 import { explainerPages, gisFeatures } from "@/data/site";
 import { CTASection } from "@/components/sections/CTASection";
-import { ExplainerLinkSection } from "@/components/sections/ExplainerLinkSection";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
+import { GuideLinks } from "@/components/sections/GuideLinks";
 import { PageHero } from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
@@ -28,11 +28,7 @@ export default function GISPage() {
         title="Geospatial applications that make location data actionable"
         description="Denalix Tech builds map-based software, spatial analytics workflows, and location intelligence platforms for organizations that depend on place, territory, routing, assets, and field operations."
       />
-      <ExplainerLinkSection
-        title="New to map-based systems?"
-        description="Start with a simple guide that explains how location data can help operations, planning, and decisions."
-        links={[explainerPages.maps]}
-      />
+      <GuideLinks intro="New to map-based systems?" links={[explainerPages.maps]} />
       <FeatureGrid
         eyebrow="Geospatial Scope"
         title="Modern GIS capabilities for web products and internal tools"

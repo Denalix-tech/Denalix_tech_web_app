@@ -8,20 +8,24 @@ import {
   GitBranch,
   Globe2,
   Layers3,
+  LifeBuoy,
   LockKeyhole,
   Map,
+  MessageCircle,
   Network,
   PlugZap,
   Rocket,
   Settings2,
-  Workflow
+  ShieldCheck,
+  Target,
+  Workflow,
+  Wrench
 } from "lucide-react";
 
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "How It Works", href: "/how-it-works" },
-  { label: "Simple Guide", href: "/learn" },
   { label: "Careers", href: "/careers" },
   { label: "About", href: "/about" }
 ];
@@ -86,45 +90,12 @@ export const services = [
 ];
 
 export const whyDenalix = [
-  "We start with the business problem",
-  "We explain options clearly",
-  "We build tools people can actually use",
-  "We connect with your existing systems",
-  "We move quickly without skipping quality",
-  "We support the work after launch"
-];
-
-export const homeOutcomes = [
-  {
-    title: "Turn manual chaos into digital clarity",
-    description:
-      "Replace scattered spreadsheets, repeated follow-ups, and copy-and-paste work with cleaner systems your team can trust."
-  },
-  {
-    title: "Find the leaks in your operation",
-    description:
-      "Identify where leads, customers, tasks, approvals, or information are getting lost, delayed, or handled twice."
-  },
-  {
-    title: "Build a roadmap before building software",
-    description:
-      "Start with the business goal, then decide what should be automated, custom-built, connected, measured, or simplified."
-  },
-  {
-    title: "Create a smoother customer journey",
-    description:
-      "Make intake, communication, status updates, scheduling, documents, and self-service easier for the people you serve."
-  },
-  {
-    title: "Scale beyond founder-led processes",
-    description:
-      "Turn knowledge in people’s heads into repeatable systems, dashboards, automations, and tools that new team members can use."
-  },
-  {
-    title: "Prepare for the next stage of growth",
-    description:
-      "Create the digital foundation for more customers, more locations, new services, better reporting, and stronger operations."
-  }
+  { title: "We start with the business problem", icon: Target },
+  { title: "We explain options clearly", icon: MessageCircle },
+  { title: "We build tools people can actually use", icon: Wrench },
+  { title: "We connect with your existing systems", icon: Network },
+  { title: "We move quickly without skipping quality", icon: ShieldCheck },
+  { title: "We support the work after launch", icon: LifeBuoy }
 ];
 
 export const explainerPages = {
@@ -341,49 +312,6 @@ export const processSteps = [
     title: "Build and improve",
     description:
       "We build in stages, connect the right tools, launch the system, and keep improving it with feedback."
-  }
-];
-
-export const homePageLinks = [
-  {
-    eyebrow: "Services",
-    title: "See what we can build or improve",
-    description:
-      "Explore the exact services behind the business outcomes: custom tools, automation, dashboards, smarter workflows, map-based systems, and digital products.",
-    href: "/services",
-    cta: "Explore services"
-  },
-  {
-    eyebrow: "How It Works",
-    title: "Understand the plan before you commit",
-    description:
-      "See how we move from a business problem to a clear roadmap, working system, launch, and ongoing improvement.",
-    href: "/how-it-works",
-    cta: "See the process"
-  },
-  {
-    eyebrow: "Simple Guide",
-    title: "Learn the basics step by step",
-    description:
-      "Not sure what automation, dashboards, AI tools, or custom software mean in practice? Start with short guides written for business readers.",
-    href: "/learn",
-    cta: "Read simple guides"
-  },
-  {
-    eyebrow: "Careers",
-    title: "Work with a practical technology team",
-    description:
-      "Learn what kind of collaborators, builders, and communicators Denalix Tech is interested in as the company grows.",
-    href: "/careers",
-    cta: "View careers"
-  },
-  {
-    eyebrow: "About",
-    title: "Meet the thinking behind Denalix Tech",
-    description:
-      "Learn why we focus on business clarity first, then use the right technology to make operations smoother and more scalable.",
-    href: "/about",
-    cta: "About Denalix"
   }
 ];
 

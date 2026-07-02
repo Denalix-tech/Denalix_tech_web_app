@@ -56,6 +56,20 @@ const config: Config = {
       backgroundImage: {
         "grid-pattern":
           "linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px)"
+      },
+      keyframes: {
+        "marquee-up": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(-50%)" }
+        },
+        "marquee-down": {
+          from: { transform: "translateY(-50%)" },
+          to: { transform: "translateY(0)" }
+        }
+      },
+      animation: {
+        "marquee-up": "marquee-up 26s linear infinite",
+        "marquee-down": "marquee-down 26s linear infinite"
       }
     }
   },

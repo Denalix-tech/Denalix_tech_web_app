@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Database, LayoutDashboard, LockKeyhole, Server, Smartphone } from "lucide-react";
 import { explainerPages, softwareFeatures } from "@/data/site";
 import { CTASection } from "@/components/sections/CTASection";
-import { ExplainerLinkSection } from "@/components/sections/ExplainerLinkSection";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
+import { GuideLinks } from "@/components/sections/GuideLinks";
 import { PageHero } from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
@@ -28,9 +28,8 @@ export default function SoftwareDevelopmentPage() {
         title="Production-ready platforms for teams that need dependable software"
         description="Denalix Tech builds full-stack systems that combine strong UX, reliable backend architecture, secure data access, and deployment practices ready for growth."
       />
-      <ExplainerLinkSection
-        title="Wondering what custom software means?"
-        description="Start with a simple guide that explains when a custom app helps and what it can look like."
+      <GuideLinks
+        intro="Wondering what custom software means?"
         links={[explainerPages.software, explainerPages.dashboards]}
       />
       <FeatureGrid

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { BrainCircuit, FileSearch, Mic, Network, Workflow } from "lucide-react";
 import { aiFeatures, explainerPages } from "@/data/site";
 import { CTASection } from "@/components/sections/CTASection";
-import { ExplainerLinkSection } from "@/components/sections/ExplainerLinkSection";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
+import { GuideLinks } from "@/components/sections/GuideLinks";
 import { PageHero } from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
@@ -28,11 +28,7 @@ export default function AISolutionsPage() {
         title="AI systems that work inside real business operations"
         description="Denalix Tech designs AI applications that combine LLMs, retrieval, data pipelines, human approval, and tool orchestration so teams can automate work without losing control."
       />
-      <ExplainerLinkSection
-        title="New to AI tools?"
-        description="Start with a short business-friendly guide before diving into the technical details."
-        links={[explainerPages.ai]}
-      />
+      <GuideLinks intro="New to AI tools?" links={[explainerPages.ai]} />
       <FeatureGrid
         eyebrow="What We Build"
         title="From AI experiments to production workflows"

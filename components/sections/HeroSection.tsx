@@ -4,6 +4,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, BarChart3, ClipboardCheck, Sparkles, Users, Workflow } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Aurora } from "@/components/effects/Aurora";
+import { BlurText } from "@/components/effects/BlurText";
 
 export function HeroSection() {
   const chips = [
@@ -15,7 +17,10 @@ export function HeroSection() {
 
   return (
     <section className="relative isolate overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-grid-pattern bg-[size:42px_42px] opacity-60" />
+      <div className="absolute inset-0 -z-20 h-full w-full">
+        <Aurora colorStops={["#0EA5E9", "#22D3EE", "#0EA5E9"]} amplitude={1.1} blend={0.55} speed={0.6} />
+      </div>
+      <div className="absolute inset-0 -z-10 bg-grid-pattern bg-[size:42px_42px] opacity-30" />
       <div className="container-pad grid min-h-[calc(100vh-4rem)] items-center gap-12 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
@@ -27,9 +32,11 @@ export function HeroSection() {
             <Sparkles className="h-4 w-4" aria-hidden="true" />
             Digital foundation for businesses ready to move faster
           </div>
-          <h1 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Modernize. Automate. Scale with confidence.
-          </h1>
+          <BlurText
+            text="Modernize. Automate. Scale with confidence."
+            delay={90}
+            className="text-balance text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl"
+          />
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
             Denalix Tech helps startups, local businesses, healthcare teams,
             and growing companies turn manual chaos into digital clarity. We

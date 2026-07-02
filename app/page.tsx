@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { CTASection } from "@/components/sections/CTASection";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { HomeOutcomesSection } from "@/components/sections/HomeOutcomesSection";
-import { HomePathSection } from "@/components/sections/HomePathSection";
+import { HomeAnimatedBackdrop } from "@/components/sections/HomeAnimatedBackdrop";
+import { HomeServicesShowcase } from "@/components/sections/HomeServicesShowcase";
+import { HomeTechShowcase } from "@/components/sections/HomeTechShowcase";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { WhySection } from "@/components/sections/WhySection";
 
@@ -16,10 +17,12 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <HomeOutcomesSection />
-      <HomePathSection />
       <WhySection />
-      <ProcessSection />
+      <HomeAnimatedBackdrop>
+        <HomeServicesShowcase />
+        <HomeTechShowcase />
+        <ProcessSection withBackground={false} />
+      </HomeAnimatedBackdrop>
       <CTASection />
     </>
   );

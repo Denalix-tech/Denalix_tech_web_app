@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { explainerPages, productIdeas } from "@/data/site";
 import { CTASection } from "@/components/sections/CTASection";
-import { ExplainerLinkSection } from "@/components/sections/ExplainerLinkSection";
+import { GuideLinks } from "@/components/sections/GuideLinks";
 import { PageHero } from "@/components/sections/PageHero";
-import { ProcessSection } from "@/components/sections/ProcessSection";
 import { SectionHeader } from "@/components/SectionHeader";
 
 export const metadata: Metadata = {
@@ -20,11 +21,7 @@ export default function SaaSProductsPage() {
         title="AI-powered SaaS products and tools built with a product mindset"
         description="Denalix Tech helps founders and organizations validate, build, launch, and improve SaaS products focused on workflow optimization, analytics, intelligent agents, and industry-specific operations."
       />
-      <ExplainerLinkSection
-        title="Thinking about a software product?"
-        description="Start with a simple guide that explains what a SaaS product is and how an idea becomes an online product."
-        links={[explainerPages.saas]}
-      />
+      <GuideLinks intro="Thinking about a software product?" links={[explainerPages.saas]} />
       <section className="py-16 sm:py-20">
         <div className="container-pad grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionHeader
@@ -44,7 +41,17 @@ export default function SaaSProductsPage() {
           </div>
         </div>
       </section>
-      <ProcessSection />
+      <section className="pb-16 sm:pb-20">
+        <div className="container-pad">
+          <Link
+            href="/how-it-works"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-200 transition hover:text-cyan-100"
+          >
+            See how we take a SaaS idea from roadmap to launch
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          </Link>
+        </div>
+      </section>
       <CTASection title="Shape your SaaS idea into a production roadmap" />
     </>
   );
