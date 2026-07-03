@@ -27,6 +27,7 @@ uniform float uSpeed;
 uniform float uScale;
 uniform float uRotation;
 uniform float uNoiseIntensity;
+uniform float uAspect;
 
 const float e = 2.71828182845904523536;
 
@@ -45,7 +46,8 @@ vec2 rotateUvs(vec2 uv, float angle) {
 
 void main() {
   float rnd = noise(gl_FragCoord.xy);
-  vec2 uv = rotateUvs(vUv * uScale, uRotation);
+  vec2 aspectCorrectedUv = vec2((vUv.x - 0.5) * max(uAspect, 1.0) + 0.5, (vUv.y - 0.5) * max(1.0 / uAspect, 1.0) + 0.5);
+  vec2 uv = rotateUvs(aspectCorrectedUv * uScale, uRotation);
   vec2 tex = uv * uScale;
   float tOffset = uSpeed * uTime;
 
@@ -104,7 +106,8 @@ export function Silk({
         uScale: { value: initial.scale },
         uNoiseIntensity: { value: initial.noiseIntensity },
         uColor: { value: new Color(initial.color) },
-        uRotation: { value: initial.rotation }
+        uRotation: { value: initial.rotation },
+        uAspect: { value: 1 }
       }
     });
 
@@ -113,7 +116,10 @@ export function Silk({
 
     function resize() {
       if (!ctn) return;
-      renderer.setSize(ctn.offsetWidth, ctn.offsetHeight);
+      const width = ctn.offsetWidth;
+      const height = ctn.offsetHeight;
+      renderer.setSize(width, height);
+      program.uniforms.uAspect.value = width / Math.max(height, 1);
     }
     window.addEventListener("resize", resize);
     resize();

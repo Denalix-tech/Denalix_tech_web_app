@@ -135,7 +135,8 @@ export function Aurora({
     const renderer = new Renderer({
       alpha: true,
       premultipliedAlpha: true,
-      antialias: true
+      antialias: true,
+      dpr: Math.min(window.devicePixelRatio, 2)
     });
     const gl = renderer.gl;
     gl.clearColor(0, 0, 0, 0);

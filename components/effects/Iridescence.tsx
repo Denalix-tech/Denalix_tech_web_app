@@ -68,7 +68,7 @@ export function Iridescence({
   useEffect(() => {
     const ctn = ctnDom.current;
     if (!ctn) return;
-    const renderer = new Renderer();
+    const renderer = new Renderer({ dpr: Math.min(window.devicePixelRatio, 2) });
     const gl = renderer.gl;
     gl.clearColor(1, 1, 1, 1);
 

@@ -21,7 +21,7 @@ export function HeroSection() {
         <Aurora colorStops={["#0EA5E9", "#22D3EE", "#0EA5E9"]} amplitude={1.1} blend={0.55} speed={0.6} />
       </div>
       <div className="absolute inset-0 -z-10 bg-grid-pattern bg-[size:42px_42px] opacity-30" />
-      <div className="container-pad grid min-h-[calc(100vh-4rem)] items-center gap-12 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
+      <div className="container-pad grid min-h-[calc(100dvh-4rem)] items-center gap-12 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
